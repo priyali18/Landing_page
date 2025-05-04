@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWorld - Explore the World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color:black;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #ef476f;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WanderWorld</h1>
+    <p>Discover breathtaking destinations around the globe</p>
+  </header>
+
+  <section class="destinations">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+      <div class="card-content">
+        <h3>Paris, France</h3>
+        <p>Explore the City of Light with its iconic Eiffel Tower, charming cafes, and world-class art museums.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://res.cloudinary.com/friendly-planet/image/fetch/q_auto,f_auto/https://www.friendlyplanet.com/media/gallery/asia/japan/tokyo-tower-at-night.2000x1325.bmp" alt="Tokyo">
+      <div class="card-content">
+        <h3>Tokyo, Japan</h3>
+        <p>Dive into a fusion of ancient traditions and futuristic innovation in Japan’s vibrant capital city.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://fthmb.tqn.com/ji2uToRmKZZUqVZa5FYTmWeWsD4=/3864x2577/filters:fill(auto,1)/new-york-city-555749235-59d5839a685fbe0011fda06b.jpg" alt="New York">
+      <div class="card-content">
+        <h3>New York, USA</h3>
+        <p>Experience the buzz of the Big Apple — skyscrapers, Broadway, Central Park, and endless diversity.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Bali">
+      <div class="card-content">
+        <h3>Bali, Indonesia</h3>
+        <p>Relax on sun-kissed beaches, explore lush jungles, and find peace in beautiful Balinese temples.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WanderWorld. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
